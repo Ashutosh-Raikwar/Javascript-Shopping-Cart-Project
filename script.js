@@ -218,4 +218,14 @@ productslist.map((product) => {
     productscontainer.appendChild(div);
 });
 
-console.log("loaded");
+let cartIcon = document.querySelector(".carticon");
+cartIcon.onclick = function(){
+    let cartUI = document.querySelector(".cartui");
+    cartUI.classList.add("cartopened");
+}
+
+let closeCart = document.querySelector(".closecart");
+closeCart.onclick = function(){
+    let cartUI = document.querySelector(".cartui");
+    cartUI.classList.remove("cartopened");
+}

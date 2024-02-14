@@ -229,3 +229,14 @@ closeCart.onclick = function(){
     let cartUI = document.querySelector(".cartui");
     cartUI.classList.remove("cartopened");
 }
+
+//Product class
+
+class Product{
+    constructor(id, title, price, image){
+        this.id = id;
+        this.title = title;
+        this.price = price;
+        this.image = image;
+    }
+}
